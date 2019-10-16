@@ -1,0 +1,23 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopiarProductos",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/origen/blobs/",
+			"scope": "/subscriptions/69fe4299-8102-4a48-8add-6f9e64eba779/resourceGroups/dia3/providers/Microsoft.Storage/storageAccounts/destinoangel",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
