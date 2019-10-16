@@ -1,0 +1,18 @@
+{
+	"name": "DestinationDataset_vx2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DestinoProductos",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "productos"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

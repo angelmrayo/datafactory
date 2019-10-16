@@ -1,0 +1,26 @@
+{
+	"name": "SourceDataset_vx2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureProductos",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Name",
+				"type": "nvarchar",
+				"precision": 255,
+				"scale": 255
+			},
+			{
+				"name": "StandardCost",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
